@@ -43,8 +43,50 @@ markdown_extensions:
 
 plugins:
   - search
+  - i18n:
+      default_language: en
+      default_language_only: false
+      docs_structure: folder
+      languages:
+        en:
+          name: English
+          build: true
+        es:
+          name: Spanish
+          build: true
+        ca:
+          name: Catalan
+          build: true
+        eu:
+          name: Euskera
+          build: true
+      nav_translations:
+        en:
+          Inicio: Start
+          GuiaRapidaEditor: QuickGuideEditor
+          GuiaRapidaGestor: QuickGuideManager
+          ManualBuenasPracticas: ManualGood Practices
+          ManualdeAccesibilidaddelTeclado: Keyboard Accessibility Manual
+        es:
+          Inicio: Inicio
+          GuiaRapidaEditor: GuiaRapidaEditor
+          GuiaRapidaGestor: GuiaRapidaGestor
+          ManualBuenasPracticas: ManualBuenasPracticas
+          ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado
+        ca:
+          Inicio: Inici
+          GuiaRapidaEditor: GuiaRapidaEditor
+          GuiaRapidaGestor: GuiaRapidaGestor
+          ManualBuenasPracticas: ManualBonesPràctiques
+          ManualdeAccesibilidaddelTeclado: Manuald'AccessibilitatdelTeclat
+        eu:
+          Inicio: Hasiera
+          GuiaRapidaEditor: Editatzeko Gida Azkarra
+          GuiaRapidaGestor: Gestiorako Gida Azkarra
+          ManualBuenasPracticas: Praktika Onen Gida
+          ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
   - mkdocs-versioning:
-      version: 0.9.0
+      version: 0.10.0
       exclude_from_nav: ["es", "en", "ca", "pdf"]
   - glightbox:
       touchNavigation: true
