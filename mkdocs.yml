@@ -45,8 +45,8 @@ markdown_extensions:
 plugins:
   - search
   - i18n:
-      default_language: en
-      default_language_only: false
+      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
       docs_structure: folder
       languages:
         en:
@@ -87,8 +87,8 @@ plugins:
           ManualBuenasPracticas: Praktika Onen Gida
           ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
   - mkdocs-versioning:
-      version: 1.0.1
-      exclude_from_nav: ["es", "en", "ca", "pdf"]
+      version: 1.0.2
+      exclude_from_nav: ["es", "en", "ca", "pdf", "img", "eu", "search", "assets"]
   - glightbox:
       touchNavigation: true
       loop: false
