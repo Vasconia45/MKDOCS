@@ -43,7 +43,8 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-      version: 0.6.0
+      version: 0.7.0
+      exclude_from_nav: ["es", "en", "ca"]
   - glightbox:
       touchNavigation: true
       loop: false
@@ -57,3 +58,5 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
+  - mkdocs-video
+  - with-pdf
