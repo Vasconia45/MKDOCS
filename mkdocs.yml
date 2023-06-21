@@ -30,6 +30,7 @@ nav:
   - GuiaRapidaGestor: GuiaRapidaGestor.md
   - ManualBuenasPracticas: ManualBuenasPracticas.md
   - ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado.md
+  - PEPE: index2.md
   - Version Selector: "../"
 
 markdown_extensions:
@@ -43,14 +44,14 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-      version: 0.7.0
+      version: 0.8.0
       exclude_from_nav: ["es", "en", "ca"]
   - glightbox:
       touchNavigation: true
       loop: false
       effect: zoom
       slide_effect: slide
-      width: 100%
+      width: auto
       height: auto
       zoomable: true
       draggable: true
