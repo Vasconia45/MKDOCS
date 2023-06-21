@@ -87,7 +87,7 @@ plugins:
           ManualBuenasPracticas: Praktika Onen Gida
           ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
   - mkdocs-versioning:
-      version: 1.0.2
+      version: 0.0.1
       exclude_from_nav: ["es", "en", "ca", "pdf", "img", "eu", "search", "assets"]
   - glightbox:
       touchNavigation: true
