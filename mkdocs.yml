@@ -30,6 +30,7 @@ nav:
   - GuiaRapidaGestor: GuiaRapidaGestor.md
   - ManualBuenasPracticas: ManualBuenasPracticas.md
   - ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado.md
+  - Version Selector: "../"
 
 markdown_extensions:
   - pymdownx.critic
@@ -41,48 +42,8 @@ markdown_extensions:
 
 plugins:
   - search
-  - i18n:
-      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
-      docs_structure: folder
-      languages:
-        en:
-          name: Englis
-          build: true
-        es:
-          name: Spanish
-          build: true
-        ca:
-          name: Catalan
-          build: true
-        eu:
-          name: Euskera
-          build: true
-      nav_translations:
-        es:
-          Inicio: Inicio
-          GuiaRapidaEditor: GuiaRapidaEditor
-          GuiaRapidaGestor: GuiaRapidaGestor
-          ManualBuenasPracticas: ManualBuenasPracticas
-          ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado
-        en:
-          Inicio: Start
-          GuiaRapidaEditor: QuickGuideEditor
-          GuiaRapidaGestor: QuickGuideManager
-          ManualBuenasPracticas: ManualGood Practices
-          ManualdeAccesibilidaddelTeclado: Keyboard Accessibility Manual
-        ca:
-          Inicio: Inici
-          GuiaRapidaEditor: GuiaRapidaEditor
-          GuiaRapidaGestor: GuiaRapidaGestor
-          ManualBuenasPracticas: ManualBonesPràctiques
-          ManualdeAccesibilidaddelTeclado: Manuald'AccessibilitatdelTeclat
-        eu:
-          Inicio: Hasiera
-          GuiaRapidaEditor: Editatzeko Gida Azkarra
-          GuiaRapidaGestor: Gestiorako Gida Azkarra
-          ManualBuenasPracticas: Praktika Onen Gida
-          ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
+  - mkdocs-versioning:
+      version: 0.3.0
   - glightbox:
       touchNavigation: true
       loop: false
