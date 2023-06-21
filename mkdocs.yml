@@ -43,7 +43,7 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-      version: 0.3.0
+      version: 0.4.0
   - glightbox:
       touchNavigation: true
       loop: false
@@ -51,7 +51,7 @@ plugins:
       slide_effect: slide
       width: 500%
       height: auto
-      zoomable: true
+      zoomable: false
       draggable: true
       skip_classes:
         - custom-skip-class-name
