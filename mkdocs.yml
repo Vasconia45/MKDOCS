@@ -2,6 +2,7 @@ site_name: My Docs
 
 theme:
   name: material
+  language: en
   features:
     - header.autohide
     - navigation.tabs
@@ -45,6 +46,7 @@ plugins:
   - search
   - i18n:
       default_language: en
+      default_language_only: false
       docs_structure: folder
       languages:
         en:
@@ -85,7 +87,7 @@ plugins:
           ManualBuenasPracticas: Praktika Onen Gida
           ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
   - mkdocs-versioning:
-      version: 1.0.0
+      version: 1.0.1
       exclude_from_nav: ["es", "en", "ca", "pdf"]
   - glightbox:
       touchNavigation: true
