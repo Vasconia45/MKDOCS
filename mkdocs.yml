@@ -43,13 +43,13 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-      version: 0.5.0
+      version: 0.6.0
   - glightbox:
       touchNavigation: true
       loop: false
-      effect: fade
+      effect: zoom
       slide_effect: slide
-      width: 500%
+      width: 100%
       height: auto
       zoomable: true
       draggable: true
