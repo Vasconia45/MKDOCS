@@ -1,0 +1,98 @@
+site_name: My Docs
+
+theme:
+  name: material
+  features:
+    - header.autohide
+    - navigation.tabs
+    - navigation.sections
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.expand
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Inicio: index.md
+  - GuiaRapidaEditor: GuiaRapidaEditor.md
+  - GuiaRapidaGestor: GuiaRapidaGestor.md
+  - ManualBuenasPracticas: ManualBuenasPracticas.md
+  - ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado.md
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+
+plugins:
+  - search
+  - i18n:
+      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      docs_structure: folder
+      languages:
+        en:
+          name: Englis
+          build: true
+        es:
+          name: Spanish
+          build: true
+        ca:
+          name: Catalan
+          build: true
+        eu:
+          name: Euskera
+          build: true
+      nav_translations:
+        es:
+          Inicio: Inicio
+          GuiaRapidaEditor: GuiaRapidaEditor
+          GuiaRapidaGestor: GuiaRapidaGestor
+          ManualBuenasPracticas: ManualBuenasPracticas
+          ManualdeAccesibilidaddelTeclado: ManualdeAccesibilidaddelTeclado
+        en:
+          Inicio: Start
+          GuiaRapidaEditor: QuickGuideEditor
+          GuiaRapidaGestor: QuickGuideManager
+          ManualBuenasPracticas: ManualGood Practices
+          ManualdeAccesibilidaddelTeclado: Keyboard Accessibility Manual
+        ca:
+          Inicio: Inici
+          GuiaRapidaEditor: GuiaRapidaEditor
+          GuiaRapidaGestor: GuiaRapidaGestor
+          ManualBuenasPracticas: ManualBonesPràctiques
+          ManualdeAccesibilidaddelTeclado: Manuald'AccessibilitatdelTeclat
+        eu:
+          Inicio: Hasiera
+          GuiaRapidaEditor: Editatzeko Gida Azkarra
+          GuiaRapidaGestor: Gestiorako Gida Azkarra
+          ManualBuenasPracticas: Praktika Onen Gida
+          ManualdeAccesibilidaddelTeclado: Teklatuaren Erabilgarritasunaren Gida
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 500%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
